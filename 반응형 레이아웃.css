@@ -1,0 +1,29 @@
+body{
+    background-color: #eee;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .main-container{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        display: flex;
+        -ms-flex-direction: column;
+        align-content: space-around;
+    }
+}
